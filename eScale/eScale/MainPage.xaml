@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Visual="Material"
+             x:Class="eScale.MainPage">
+    
+    <!-- OnColor="#8bc8f8" ThumbColor="#2196F3"-->
+    <RelativeLayout Padding="0">
+        <Image
+            Aspect="AspectFill"
+            Source="jan_koh_bg"
+            Opacity="0.75"
+            RelativeLayout.WidthConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+            RelativeLayout.HeightConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Height}">
+        </Image>
+        <StackLayout>
+            <Image Source="eScale_logo" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="150" Margin="0,20"></Image>
+            <Frame Margin="10,0" Opacity="0.85">
+                <!--<Frame.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                        <GradientStop Color="White" Offset="0.1"/>
+                        <GradientStop Color="Transparent" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Frame.Background>-->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width=".45*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="60"/>
+                    </Grid.RowDefinitions>
+                    <Label x:Name="FallLbl" Text="Nofiticaciones por caída" Grid.Row="0" Grid.Column="0" FontSize="14" VerticalTextAlignment="Center"/>
+                    <Switch x:Name="FallToggle" Toggled="FallToggle_Toggled" Grid.Row="0" Grid.Column="1"/>
+                    <Label x:Name="FlashlightLbl" Text="Encender linterna en caída" Grid.Row="1" Grid.Column="0" FontSize="14" VerticalTextAlignment="Center"/>
+                    <Switch x:Name="FlashlightToggle" Toggled="FlashlightToggle_Toggled" Grid.Row="1" Grid.Column="1"/>
+                    <Label x:Name="SmsLbl" Text="Enviar SMS" Grid.Row="2" Grid.Column="0" FontSize="14" VerticalTextAlignment="Center"/>
+                    <Switch x:Name="SmsToggle" Toggled="SmsToggle_Toggled" Grid.Row="2" Grid.Column="1"/>
+                    <Entry x:Name="PhoneTxt" Placeholder="Teléfono" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" FontSize="14" Keyboard="Telephone" MaxLength="9" IsVisible="false"/>
+                </Grid>
+            </Frame>
+            <Frame Margin="10,10,10,0" Opacity="0.85">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width=".45*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="60"/>
+                    </Grid.RowDefinitions>
+                    <Label x:Name="DebugLbl" Text="Debug" Grid.Row="0" Grid.Column="0" FontSize="14" VerticalTextAlignment="Center"/>
+                    <Switch x:Name="DebugToggle" Toggled="DebugToggle_Toggled" Grid.Row="0" Grid.Column="1"/>
+                    <Entry x:Name="ThresholdTxt" Text="5.0" Grid.Row="1" Grid.ColumnSpan="2" FontSize="14" TextChanged="ThresholdTxt_TextChanged" Placeholder="Velocidad de caída" IsVisible="false"/>
+                </Grid>
+            </Frame>
+            <Grid Margin="10" VerticalOptions="EndAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <Button x:Name="FlashlightBtn" Text="Encender Linterna" Grid.Row="0" Clicked="FlashlightBtn_Clicked"/>
+                <Button x:Name="ConnectionStateBtn" Text="Estado de la conexión" Grid.Row="1" Clicked="ConnectionStateBtn_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </RelativeLayout>
+</ContentPage>

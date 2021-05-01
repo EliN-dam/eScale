@@ -1,0 +1,14 @@
+D:\Documentos\Visual Studio 2019\Projects\eScale\eScale\eScale\bin\Debug\netstandard2.0\eScale.deps.json
+D:\Documentos\Visual Studio 2019\Projects\eScale\eScale\eScale\bin\Debug\netstandard2.0\eScale.dll
+D:\Documentos\Visual Studio 2019\Projects\eScale\eScale\eScale\bin\Debug\netstandard2.0\ref\eScale.dll
+D:\Documentos\Visual Studio 2019\Projects\eScale\eScale\eScale\bin\Debug\netstandard2.0\eScale.pdb
+D:\Documentos\Visual Studio 2019\Projects\eScale\eScale\eScale\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Documentos\Visual Studio 2019\Projects\eScale\eScale\eScale\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\Documentos\Visual Studio 2019\Projects\eScale\eScale\eScale\obj\Debug\netstandard2.0\eScale.AssemblyInfoInputs.cache
+D:\Documentos\Visual Studio 2019\Projects\eScale\eScale\eScale\obj\Debug\netstandard2.0\eScale.AssemblyInfo.cs
+D:\Documentos\Visual Studio 2019\Projects\eScale\eScale\eScale\obj\Debug\netstandard2.0\eScale.csproj.CoreCompileInputs.cache
+D:\Documentos\Visual Studio 2019\Projects\eScale\eScale\eScale\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Documentos\Visual Studio 2019\Projects\eScale\eScale\eScale\obj\Debug\netstandard2.0\eScale.dll
+D:\Documentos\Visual Studio 2019\Projects\eScale\eScale\eScale\obj\Debug\netstandard2.0\ref\eScale.dll
+D:\Documentos\Visual Studio 2019\Projects\eScale\eScale\eScale\obj\Debug\netstandard2.0\eScale.pdb
+D:\Documentos\Visual Studio 2019\Projects\eScale\eScale\eScale\obj\Debug\netstandard2.0\eScale.csprojAssemblyReference.cache
